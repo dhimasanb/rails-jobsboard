@@ -18,4 +18,7 @@ class JobsController < ApplicationController
       render "New"
     end
   end
+
+  def edit
+  end
 end
