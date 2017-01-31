@@ -4,4 +4,8 @@ class JobsController < ApplicationController
 
   def show
   end
+
+  def new
+    @job = Job.new
+  end
 end
