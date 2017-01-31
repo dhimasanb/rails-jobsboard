@@ -8,4 +8,14 @@ class JobsController < ApplicationController
   def new
     @job = Job.new
   end
+
+  def create
+    @job = Job.new(jobs_params)
+
+    if @job.save
+      redirect_to @job
+    else
+      render "New"
+    end
+  end
 end
